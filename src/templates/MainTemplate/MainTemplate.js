@@ -10,6 +10,9 @@ const MainTemplate = () => (
   <>
     <GlobalStyle></GlobalStyle>
     <ThemeProvider theme={theme}>{children}</ThemeProvider>
+    <Card cardType='note'></Card>
+      <Card cardType='twitter'></Card>
+      <Card cardType='article'></Card>
   </>
 );
 MainTemplate.propTypes = {
