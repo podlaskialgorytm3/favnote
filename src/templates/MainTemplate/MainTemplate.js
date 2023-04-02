@@ -4,17 +4,16 @@ import { ThemeProvider } from 'styled-components';
 import theme from '../../theme/mainTheme'
 //import Card from '../../components/molecules/Card/Card'
 import PropTypes from 'prop-types';
-import { Children } from 'react';
 
 
 const MainTemplate = () => (
   <>
     <GlobalStyle></GlobalStyle>
-    <ThemeProvider theme={theme}>{Children}</ThemeProvider>
+    <ThemeProvider theme={theme}>{children}</ThemeProvider>
   </>
 );
 MainTemplate.propTypes = {
-    Children: PropTypes.element.isRequired
+    children: PropTypes.element.isRequired
 }
 
 
